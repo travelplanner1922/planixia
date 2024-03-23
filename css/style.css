@@ -1,0 +1,90 @@
+
+/* Header Section */
+
+header {
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/478/534/desktop-wallpaper-backgrounds-for-travel-website-travel-agency.jpg);
+    position: relative;
+}
+
+/* Nav Bar Start Here */
+
+nav {
+    display: flex;
+    background-color: white;  
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    font-size: 18px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Profile Menu DropDown */
+
+.profile-dropdown {
+    position: absolute;
+    top: 70px; /* Adjust the distance from the avatar as needed */
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+  }
+
+  .profile-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .profile-dropdown li {
+    padding: 12px;
+  }
+
+  .profile-dropdown li:first-child{
+    border-bottom: 1px solid #eee;
+  }
+
+  .profile-dropdown li:last-child {
+    border-top: 1px solid #eee;
+  }
+
+  .profile-dropdown a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+
+  .profile-dropdown li:first-child:hover {
+    background-color: #fff;
+  }
+
+  .profile-dropdown li:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* hero section */
+
+  .hero {
+    padding-top: 10%;
+}
+
+/* blog section */
+
+.blogs {
+  padding-top: 5%;
+}
