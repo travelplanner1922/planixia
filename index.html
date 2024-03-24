@@ -3,418 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
     <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
     <title>Planixia | The Secret of Travel</title>
   </head>
   <body>
-    <header class="bg-white">
-      <nav
-        class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
-        aria-label="Global"
-      >
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img
-              class="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="flex lg:hidden">
-          <button
-            type="button"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </button>
-        </div>
+    <header class="header">
+      <a href="#" class="main-nav-link">
+        <h2>Planixia</h2>
+      </a>
 
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >Blog</a
-            >
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >Tlog</a
-            >
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >About</a
-            >
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >Contact</a
-            >
-            <button>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-                >LogIn</a
-              >
-            </button>
-            <button>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-                >Signup</a
-              >
-            </button>
-          </div>
-        </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">Blog</a></li>
+          <li><a class="main-nav-link" href="#meals">Tlog</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">About</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Contact</a></li>
+          <li>
+            <a class="main-nav-link nav-cta btn-outline" href="#cta">Login</a>
+          </li>
+          <li><a class="main-nav-link nav-cta btn" href="#cta">Signup</a></li>
+        </ul>
       </nav>
-      <!-- Mobile menu, show/hide based on menu open state. -->
-      <div class="lg:hidden" role="dialog" aria-modal="true">
-        <!-- Background backdrop, show/hide based on slide-over state. -->
-        <div class="fixed inset-0 z-10"></div>
-        <div
-          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
-        >
-          <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img
-                class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-              <span class="sr-only">Close menu</span>
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                <div class="-mx-3">
-                  <button
-                    type="button"
-                    class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    aria-controls="disclosure-1"
-                    aria-expanded="false"
-                  >
-                    Product
-                    <!--
-                      Expand/collapse icon, toggle classes based on menu open state.
-    
-                      Open: "rotate-180", Closed: ""
-                    -->
-                    <svg
-                      class="h-5 w-5 flex-none"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                  <!-- 'Product' sub-menu, show/hide based on menu state. -->
-                  <div class="mt-2 space-y-2" id="disclosure-1">
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      >Analytics</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      >Engagement</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      >Security</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      >Integrations</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      >Automations</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      >Watch demo</a
-                    >
-                    <a
-                      href="#"
-                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      >Contact sales</a
-                    >
-                  </div>
-                </div>
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Features</a
-                >
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Marketplace</a
-                >
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Company</a
-                >
-              </div>
-              <div class="py-6">
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Log in</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
-    <section class="bg-white dark:bg-gray-900">
-      <div
-        class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
-      >
-        <div class="mr-auto place-self-center lg:col-span-6">
-          <h1
-            class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
-          >
-            Find Next Place To Visit
-          </h1>
-          <p
-            class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores,
-            deleniti reiciendis consequatur accusantium fugit, cupiditate fugiat
-            illo maxime, enim possimus? Magni dolorem qui iusto unde accusamus
-            blanditiis eos? Quas?
-          </p>
-          <a
-            href="#"
-            style="background-color: #8187dc"
-            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg btnBgColor hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-          >
-            Get started
-            <svg
-              class="w-5 h-5 ml-2 -mr-1"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </a>
-        </div>
-        <div class="hidden lg:mt-0 lg:col-span-6 lg:flex">
-          <img src="./img/hero.png" alt="mockup" />
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-white dark:bg-gray-900">
-      <div class="bg-white py-8">
-        <div class="container mx-auto px-4">
-          <div class="flex justify-center mb-6">
-            <h2
-              class="text-4xl text-center font-extrabold text-gray-900 bg-color mb-12"
-            >
-              WHY PLANIXIA
-            </h2>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Find Next Place To Visit</h1>
+            <p class="hero-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates possimus beatae ab ipsum itaque unde veniam cupiditate
+              ducimus ea incidunt cumque praesentium quo, aliquid iure saepe
+              doloribus deleniti illo magni!
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm">Get Started</a>
           </div>
-          <div class="flex justify-around items-center">
-            <!-- Icon 1 -->
-            <div class="flex flex-col items-center">
-              <div class="mb-2">
-                <!-- Replace with actual image -->
-                <img class="h-12 w-12" src="./img/money.png" alt="Icon 1" />
-              </div>
-              <p class="text-center text-gray-600">Earn With Us</p>
-            </div>
-            <!-- Icon 2 -->
-            <div class="flex flex-col items-center">
-              <div class="mb-2">
-                <!-- Replace with actual image -->
-                <img class="h-12 w-12" src="./img/update.png" alt="Icon 2" />
-              </div>
-              <p class="text-center text-gray-600">Fully Updated</p>
-            </div>
-            <!-- Icon 3 -->
-            <div class="flex flex-col items-center">
-              <div class="mb-2">
-                <!-- Replace with actual image -->
-                <img
-                  class="h-12 w-12"
-                  src="./img/friendship.png"
-                  alt="Icon 3"
-                />
-              </div>
-              <p class="text-center text-gray-600">Truested Review</p>
-            </div>
-            <!-- Icon 4 -->
-            <div class="flex flex-col items-center">
-              <div class="mb-2">
-                <!-- Replace with actual image -->
-                <img
-                  class="h-12 w-12"
-                  src="./img/best-friends.png"
-                  alt="Icon 4"
-                />
-              </div>
-              <p class="text-center text-gray-600">100+ Tlogger</p>
-            </div>
+          <div class="hero-img-box">
+            <picture>
+              <img
+                src="./img/hero.png"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+              />
+            </picture>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="bg-white dark:bg-grey-900">
-      <div class="bg-dark-700 py-10 px-4">
-        <div class="max-w-6xl mx-auto">
-          <h2
-            class="text-4xl text-center font-extrabold text-gray-900 bg-color mb-12"
-          >
-            BLOGS
-          </h2>
+      <section class="section-how" id="how">
 
-          <h4 class="text-xl text-center font-extrabold text-gray-900 mb-12">
+        <div class="container">
+          <span class="subheading">Blogs</span>
+          <h2 class="heading-secondary">
             Our Daily Blog Help You To Find Out Best Travel Tips
-          </h4>
-          <div class="flex justify-center space-x-10">
-            <!-- Start of Card 1 -->
-            <div
-              class="bg-white p-4 rounded-2xl shadow-xl"
-              style="width: 350px"
-            >
-              <div class="bg-blue-100 p-4 rounded-t-lg">
-                <img
-                  class="mx-auto"
-                  src="https://i.pinimg.com/736x/94/d0/17/94d0170ee36eb1629152e27633770e7d.jpg"
-                  alt="Blog Image 1"
-                  style="height: 250px; width: 100%"
-                />
-              </div>
-              <div class="p-4">
-                <p class="text-gray-400 text-xs">22 Jan 2024</p>
-                <h3 class="font-bold text-lg mt-2">
-                  How to Travel with Less Luggage ?
-                </h3>
-                <p class="text-gray-500 text-sm mt-2">
-                  Travel with less luggage is the unique concept that we
-                  cracked.
-                </p>
-                <a href="#" class="text-blue-600 text-sm mt-4 inline-block"
-                  >Read More</a
-                >
-              </div>
-            </div>
-            <!-- End of Card 1 -->
-
-            <!-- Start of Card 2 -->
-            <div
-              class="bg-white p-4 rounded-2xl shadow-xl"
-              style="width: 350px"
-            >
-              <div class="bg-blue-100 p-4 rounded-t-lg">
-                <img
-                  class="mx-auto"
-                  src="https://i.pinimg.com/736x/94/d0/17/94d0170ee36eb1629152e27633770e7d.jpg"
-                  alt="Blog Image 1"
-                  style="height: 250px; width: 100%"
-                />
-              </div>
-              <div class="p-4">
-                <p class="text-gray-400 text-xs">22 Jan 2024</p>
-                <h3 class="font-bold text-lg mt-2">
-                  How to Travel with Less Luggage ?
-                </h3>
-                <p class="text-gray-500 text-sm mt-2">
-                  Travel with less luggage is the unique concept that we
-                  cracked.
-                </p>
-                <a href="#" class="text-blue-600 text-sm mt-4 inline-block"
-                  >Read More</a
-                >
-              </div>
-            </div>
-            <!-- End of Card 2 -->
-          </div>
+          </h2>
         </div>
-      </div>
-    </section>
-
-    <section class="bg-white dark:bg-grey-900">
-      <div
-        class="bg-white shadow-lg rounded-lg p-4 flex justify-between items-center mx-auto"
-        style="width: 350px"
-      >
-        <div class="flex items-center">
-          <img
-            class="w-12 h-12 rounded-full mr-4"
-            src="avatar.jpg"
-            alt="Kaushal Jain"
-          />
-          <div>
-            <h2 class="text-lg font-semibold text-gray-800">Kaushal Jain</h2>
-            <p class="text-gray-600">42K Followers</p>
-            <div class="flex text-sm text-gray-800">
-              <p class="mr-2">20 Tlogs</p>
-              <p>8 Posts</p>
+        
+        <div class="grid grid--2-cols grid--center-v">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1615147342761-9238e15d8b96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80" class="card__image" alt="brown couch" />
+            <div class="card__content">
+              <time datetime="2021-03-30" class="card__date">30 March 2021</time>
+              <h5 class="card__title">How to Travel with Less Luggage ?<h5>
+                <p class="card_des">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, possimus neque ducimus commodi, delectus....
+                </p>
+            </div>
+          </div>
+  
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1615147342761-9238e15d8b96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80" class="card__image" alt="brown couch" />
+            <div class="card__content">
+              <time datetime="2021-03-30" class="card__date">30 March 2021</time>
+              <h5 class="card__title">How to Travel with Less Luggage ?<h5>
+                <p class="card_des">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, possimus neque ducimus commodi, delectus....
+                </p>
             </div>
           </div>
         </div>
-        <div class="flex flex-col">
-          <button
-            class="bg-blue-500 text-white text-sm px-4 py-2 rounded-md hover:bg-blue-600 transition-colors mb-2"
-          >
-            FOLLOW
-          </button>
-          <button
-            class="bg-green-500 text-white text-sm px-4 py-2 rounded-md hover:bg-green-600 transition-colors"
-          >
-            SHARE
-          </button>
-        </div>
-      </div>
-    </section>
+
+      </section>
+    </main>
   </body>
 </html>
