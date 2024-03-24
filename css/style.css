@@ -3,8 +3,8 @@
 /**************************/
 
 :root {
-  --font-family-primary: "Vollkorn", serif;
-  --font-family-secondary: "PT Sans", sans-serif;
+  --font-family-primary: "Rubik", sans-serif;
+  --font-family-secondary: "Rubik", sans-serif;
   --font-size-title: 16px;
   --line-height-title: 1.4;
   --font-size-caption: 14px;
@@ -215,7 +215,7 @@
 }
 
 .card__title {
-  font-family: var(--font-family-primary);
+  font-family: inherit;
   font-size: var(--font-size-title);
   line-height: var(--line-height-title);
   color: var(--color-text);
