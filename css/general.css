@@ -95,6 +95,10 @@ Medium: 11px
     padding: 0 3.2rem;
     margin: 0 auto;
   }
+
+  .text-center {
+    text-align: center;
+  }
   
   .grid {
     display: grid;
@@ -136,7 +140,7 @@ Medium: 11px
   .heading-secondary,
   .heading-tertiary {
     font-weight: 700;
-    color: #333;
+    color: #8187DC;
     /* color: #45260a; */
     /* color: #343a40; */
     letter-spacing: -0.5px;
@@ -151,7 +155,8 @@ Medium: 11px
   .heading-secondary {
     font-size: 4.4rem;
     line-height: 1.2;
-    margin-bottom: 9.6rem;
+    margin-bottom: 2.6rem;
+    /* color: #333; */
   }
   
   .heading-tertiary {
@@ -164,9 +169,8 @@ Medium: 11px
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    color: #8187DC;
+    color: #333;
     text-transform: uppercase;
-    margin-bottom: 1.6rem;
     letter-spacing: 0.75px;
   }
   
@@ -188,6 +192,16 @@ Medium: 11px
     /* Put transition on original "state" */
     /* transition: background-color 0.3s; */
     transition: all 0.3s;
+  }
+
+  .btn-sm {
+    background-color: #8187DC;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
   }
   
   .btn--full:link,

@@ -12,7 +12,7 @@
   --color-text: #222022;
   --color-highlight-primary: #ffef7e;
   --color-highlight-secondary: #b7f9e9;
-  --border-radius-primary: 32px;
+  --border-radius-primary: 10px;
 }
 
 .header {
@@ -613,7 +613,7 @@
 .cta .heading-secondary {
   /* color: #45260a; */
   color: inherit;
-  margin-bottom: 3.2rem;
+  /* margin-bottom: 3.2rem; */
 }
 
 .cta-text {
