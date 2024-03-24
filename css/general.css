@@ -202,6 +202,7 @@ Medium: 11px
     border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
+    padding: 2px 12px;
   }
   
   .btn--full:link,
