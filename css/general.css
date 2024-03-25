@@ -173,6 +173,10 @@ Medium: 11px
     text-transform: uppercase;
     letter-spacing: 0.75px;
   }
+
+  .mainHeading {
+    color: #333 !important;
+  }
   
   .btn,
   .btn:link,
