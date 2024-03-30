@@ -853,3 +853,30 @@
 .profile-menu-container:hover .dropdown-menu {
   display: block;
 }
+
+/* Dashboard Section */
+
+.dashboard {
+  display: flex;
+}
+
+.left-section {
+  width: 300px;
+  /* background-color: #51cf66; */
+  padding: 10px;
+}
+
+.left-lists {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 1.8rem;
+}
+
+.right-section {
+  width: 900px;
+  background-color: #8187DC;
+  padding: 10px;
+}
+
